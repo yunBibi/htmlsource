@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      .child1 {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+        /* display: inline-block; */
+        float: left;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: violet;
+        /* clear: left; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent1 clearfix">
+      <div class="child1">1</div>
+      <div class="child1">2</div>
+      <div class="child1">3</div>
+    </div>
+    <div class="box">4</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veritatis
+      deleniti facere, aspernatur tenetur illo adipisci similique quidem vero
+      cumque dolor impedit porro ea voluptatibus amet optio molestias fuga
+      consequuntur.
+    </p>
+  </body>
+</html>
