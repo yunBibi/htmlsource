@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div > h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>자손 선택자</h1>
+    <div>
+      <h2 id="title">자손(하위) 선택자</h1>
+    </div>
+    <div>
+      <h2>자손(하위) 선택자</h2>
+      <h2>자손(하위) 선택자</h2>
+    </div>
+  </body>
+
+  <!-- html의 자식 태그 : head, body (html의 바로 밑 태그만 포함)  => > 사용  'div > h2 {}'
+            자손(후손, 하위) 태그 : head와 body를 포함한 모든 태그(meta, h1, div...) => 공백 사용  'div h2 {}'
+        -->
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        background-color: lightsalmon;
+        height: 300px;
+        /* inline 요소에서 height와 width값을 주는 것은 의미가 없다. */
+      }
+      div {
+        text-align: center;
+      }
+      div a {
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        display: none;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- span : 인라인 요소
+         width : 0 ~ 가지고 있는 내용만큼만 잡는다.
+         height : 0-->
+    <span
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam velit
+      soluta molestiae voluptatibus sed, reiciendis quas optio libero minus
+      eaque a voluptatum rem fuga fugiat delectus temporibus doloremque eius
+      incidunt!
+    </span>
+    <div>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+    </div>
+  </body>
+</html>

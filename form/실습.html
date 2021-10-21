@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>상품주문서</h1>
+    <fieldset>
+      <legend>개인 정보</legend>
+      <ul>
+        <li>
+            <label for="이름">이름</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="여백없이 입력"
+            />
+        </li>
+        <li>
+            <label for="연락처">연락처</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="연락가능한 번호"
+            />
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>배송지 정보</legend>
+      <ul></ul>
+        <li>
+          <label for="주소">주소</label>
+          <input type="text" name="address" id="address" />
+        </li>
+        <li>
+          <label for="전화번호">전화번호</label><input type="tel" name="tel" id="tel" />
+        </li>
+        <li>
+          <label for="메모">메모</label>
+          <textarea name="memo" id="memo" cols="30" rows="3"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>주문 정보</legend>
+      <ul>
+          <li><input type="checkbox" name="안티구아" id="안티구아">
+            과테말라 안티구아 (100g)
+            <input type="number" name="" id="" min="0" max="10">개</li>
+            <li>
+          <input type="checkbox" name="만델링" id="만델링">
+          인도네시아 만델링 (100g)
+          <input type="number" name="" id="" min="0" max="10">개</li>
+          <li>
+          <input type="checkbox" name="블렌딩" id="블렌딩">
+          제주블렌딩 (100g)
+          <input type="number" name="" id="" min="0" max="10">개</li>
+      </ul>
+    </fieldset>
+    <button>주문하기</button>
+    <input type="button" value="다시 작성" />
+  </body>
+</html>

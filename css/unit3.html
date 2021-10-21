@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        /* font-sisze: 12px; */
+      }
+
+      h1 {
+        font-size: 1.5rem; /*16px * 1.5*/
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        width: 70%;
+
+        font-size: 1.5rem;
+      }
+      span {
+        font-size: 0.8em; /* (16px * 1.5 <= p크기) * 0.8*    - 16을 기준으로 *0.8이 아니라 p태그 기준으로 *0.8/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>단위</h1>
+    <!-- 
+        인쇄용 : 인치, cm, pt
+        모니터용 : px(고정 크기), em, rem(root element: 브라우저 폰트 기본크기를 기준으로 크기를 잡는다.), %(상대크기)
+
+        em : em 단위가 쓰여진 곳의 폰트 사이즈 배수
+        rem : 문서 기본값(16px)의 배수 
+
+        브라우저 폰트 기본 크기 : 16px
+        1em = 16px, 1.5em = 24px
+
+        :root{} => 브라우저 폰트 기본 크기를 변경시킴
+        여기서 1em = 12px, 1.5em = 18px
+    -->
+
+    <h1>css 기본 문법</h1>
+    <h2>사이즈</h2>
+    <p>
+      <span>Lorem ipsum,</span> dolor sit amet consectetur adipisicing elit.
+      Quibusdam eos suscipit sed atque beatae voluptatum ducimus sit impedit
+      illo perspiciatis et repellat, hic consequatur, laboriosam amet ipsa
+      soluta ratione sunt? Natus earum veritatis architecto quod expedita
+      officiis nihil, pariatur beatae maxime reprehenderit blanditiis totam
+      libero. Voluptatem dolore a fugiat. Sed cumque ipsa beatae. Quasi corrupti
+      aspernatur harum praesentium qui itaque ea deserunt voluptates. Dolores
+      nam aliquam deleniti ex vitae beatae molestiae cum, voluptate, odio saepe
+      quasi. Harum ipsa necessitatibus dolorem odio repellendus molestias
+      repellat libero veniam possimus ducimus magni unde soluta, similique, quos
+      at excepturi placeat est error? Voluptate, maiores.
+    </p>
+  </body>
+</html>

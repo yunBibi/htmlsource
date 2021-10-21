@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+      + : 첫째 동생만 적용
+      ~ : h1 뒤에 있는 h2들 모두
+      div h1 + h2 {
+        color: red;
+      } */
+      div h1 ~ h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>인접형제 선택자</h1>
+      <h2>형제1</h2>
+      <h2>형제2</h2>
+      <nav>
+        <h2>제목</h2>
+      </nav>
+    </div>
+  </body>
+</html>

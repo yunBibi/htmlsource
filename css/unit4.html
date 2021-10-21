@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 13px;
+      }
+      body {
+        font-size: 12px;
+      }
+
+      .box {
+        float: left;
+        margin-right: 20px;
+        background-color: blue;
+        color: #fff;
+        text-align: center;
+      }
+      /* .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+      .box_px {
+        width: 160px;
+        height: 160px;
+      }
+      .box_em {
+        width: 10em; /* 따로 설정된 값이 없기 때문에 기본값 16px을 기준으로 함*/
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem; /* 16px * 10*/
+        height: 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- class~ : 전역 속성-->
+    <div class="wrapper clearfix">
+      <div class="box box_px">PX</div>
+      <div class="box box_em">EM</div>
+      <div class="box box_rem">REM</div>
+    </div>
+  </body>
+</html>

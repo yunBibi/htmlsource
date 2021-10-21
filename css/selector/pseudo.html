@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+      a:visited {
+        color: magenta;
+      }
+      a:hover {
+        color: orange;
+      }
+      a:active {
+        background-color: yellow;
+      }
+      input {
+        width: 150px;
+        outline: none; /*input의 원래 테두리 제거 */
+        border: 1px solid lightpink;
+        transition: 0.4s;
+        padding: 5px 10px;
+      }
+      input:focus {
+        width: 200px;
+        border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        가상 클래스 : 사용자의 동작에 반응 
+
+        :link => 방문하지 않은 링크에 스타일 적용
+        :visited => 방문한 링크에 스타일 적용
+        :hover => 요소에 마우스를 올려놨을 때 스타일 적용
+        :active => 요소를 활성화했을 때 스타일 적용
+        :focus => 웹 요소에 초점이 맞춰졌을 때 스타일 적용
+
+        가상 클래스 적용 시 순서가 있다.
+        link -> visited -> hover -> active 순서를 지켜야 한다.
+        -->
+
+    <h1>가상 클래스 선택자</h1>
+    <ul>
+      <li><a href="" target="_black">google</a></li>
+      <li><a href="" target="_black">daum</a></li>
+      <li><a href="" target="_black">naver</a></li>
+      <li><a href="http://11st.co.kr" target="_black">11번가</a></li>
+    </ul>
+    <div><input type="text" /></div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #ddd;
+      }
+      .box {
+        background-color: white;
+        /* height: 50px; */
+        /* overflow: auto; */
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .clearfix {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- overfolw : 요소의 크기 이상으로 내용이 넘쳤을 때 어떻게 처리할 것인가
+        auto : 넘친 부분이 있는 경우 잘라내고 스크롤바 이용
+        hidden : 넘친 부분을 잘라내고 보이지 않도록 함
+        scroll : 넘친 부분을 잘라내고 스크롤바를 이용하여 볼 수 있도록 함
+        visible : 넘친 부분을 자르지 않고 그대로 보여줌(default)
+      -->
+    <div class="box">
+      <img src="./img/left-arrow.png" alt="왼쪽화살표" class="left" />
+      <img src="./img/right-arrow.png" alt="오른쪽화살표" class="right" />
+      <p class="clearfix">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+        <!-- maiores perspiciatis adipisci! Aperiam ut cumque fuga aspernatur esse
+        eaque veritatis exercitationem tenetur ipsam. Nemo, tenetur vel error
+        fugiat nesciunt quasi nam molestiae voluptas. Qui ut atque incidunt,
+        illo enim molestiae laboriosam ipsa modi molestias tenetur. Laborum
+        quaerat eligendi quas perspiciatis, quam, eos, sed voluptatem molestiae
+        commodi ab dicta. Quidem aut molestias officia totam cum corrupti
+        sapiente ab odit aliquam sunt, necessitatibus cupiditate ad. Vitae a
+        eaque pariatur quam rerum sit alias accusantium cum, laborum ab dicta
+        sunt odio, ipsam laboriosam quisquam vel nesciunt inventore. Recusandae
+        repellat consequatur culpa nostrum ad. -->
+      </p>
+    </div>
+  </body>
+</html>

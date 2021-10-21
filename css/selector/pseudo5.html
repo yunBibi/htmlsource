@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* h1:first-of-type {
+        color: red;
+      } */
+      h3:last-of-type {
+        color: blue;
+      }
+      h4:nth-last-of-type(2) {
+        text-decoration: underline;
+      }
+      h1 {
+        color: black;
+      }
+      :not(h1) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>형태 구조 선택자</h1>
+    <p>:nth-of-type(n), nth-last-of-type(n)</p>
+    <ul>
+      <li>List1</li>
+      <li>List2</li>
+      <li>List3</li>
+      <li>List4</li>
+      <li>List5</li>
+    </ul>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+  </body>
+</html>

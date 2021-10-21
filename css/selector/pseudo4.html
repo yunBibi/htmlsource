@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table,
+      td {
+        border: 1px solid black;
+      }
+      tr:nth-child(odd) {
+        background-color: turquoise;
+        color: blue;
+      }
+      /* 몇 번째 자식인지는 전체 입장에서 생각해야 한다. 
+        아래 예제에서는 p가 첫번째니까 1을 주는 것이 아니라, 2를 줘야하는 것*/
+      ul p:nth-child(2) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>블루베리</td>
+      </tr>
+      <tr>
+        <td>토마토</td>
+      </tr>
+      <tr>
+        <td>시금치</td>
+      </tr>
+      <tr>
+        <td>적포도주</td>
+      </tr>
+      <tr>
+        <td>견과류</td>
+      </tr>
+      <tr>
+        <td>연어</td>
+      </tr>
+      <tr>
+        <td>마늘</td>
+      </tr>
+    </table>
+    <ul>
+      <div>딸기</div>
+      <p>사과</p>
+      <p>오렌지</p>
+      <span>망고</span>
+    </ul>
+  </body>
+</html>
